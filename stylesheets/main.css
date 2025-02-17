@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Sigmar';
+    src: url('../fonts/Sigmar/Sigmar-Regular.ttf') format('truetype');
+    font-weight: normal;  /* Regular weight */
+    font-style: normal;   /* Regular style */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('woff2');
+    font-weight: 100 900;  /* Range of supported weights (adjust according to the font's capabilities) */
+    /* font-stretch: 75% 125%;  Optional, if the font has width variations */
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    font-family: 'Roboto', Arial, sans-serif;
+    &.header-link {
+        font-weight: 400;
+    }
+}
+
+h1 {
+    font-size: 6em;
+    word-spacing: 0.3em;
+    margin-top: -120px;
+}
+
+h1, h2, .title>a {
+    font-family: 'Sigmar', Arial, sans-serif;
+}
+
+h1, h2, a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header, .footer {
+    color: white;
+    font-size: 1em;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    height: 50px;
+    background-color: #88B3BC;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+}
+
+.lobster-icon {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/background.jpg");
+    background-position-y: 50%;
+    background-size: 100%;
+}
+
+.lobster {
+    width: 150px;
+}
+
+.subtitle {
+    margin-top: -30px;
+}
+
+.reserve {
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #FE6E22;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    height: 40px;
+    background-color: #88B3BC;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ingredient-link {
+    text-decoration: underline;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 20px;
+}
